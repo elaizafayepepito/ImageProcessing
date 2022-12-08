@@ -134,5 +134,47 @@ namespace ImageProcessing
             pictureBox2.Image = processed;
         }
 
+        private void sepiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(loaded.Width, loaded.Height);
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    Color pixel = loaded.GetPixel(x, y);
+
+                    //extract pixel component ARGB
+                    int a = pixel.A;
+                    int r = pixel.R;
+                    int g = pixel.G;
+                    int b = pixel.B;
+
+                    //calculate temp value
+                    int tr = (int)(0.393 * r + 0.769 * g + 0.189 * b);
+                    int tg = (int)(0.349 * r + 0.686 * g + 0.168 * b);
+                    int tb = (int)(0.272 * r + 0.534 * g + 0.131 * b);
+
+                    //set new RGB value
+                    if (tr > 255)
+                        r = 255;
+                    else
+                        r = tr;
+
+                    if (tg > 255)
+                        g = 255;
+                    else
+                        g = tg;
+
+                    if (tb > 255)
+                        b = 255;
+                    else
+                        b = tb;
+
+                    processed.SetPixel(x, y, Color.FromArgb(a, r, g, b));
+                }
+            }
+            pictureBox2.Image = processed;
+        }
+
     }
 }
