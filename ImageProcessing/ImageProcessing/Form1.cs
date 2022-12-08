@@ -70,5 +70,20 @@ namespace ImageProcessing
             pictureBox2.Image = processed;
         }
 
+        private void colorInversionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(loaded.Width, loaded.Height);
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    Color pixel = loaded.GetPixel(x, y);
+                    processed.SetPixel(x, y, Color.FromArgb(255 - pixel.R, 255 - pixel.G, 255 - pixel.B));
+                }
+            }
+            pictureBox2.Image = processed;
+        }
+
+
     }
 }
