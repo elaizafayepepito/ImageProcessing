@@ -1,0 +1,11 @@
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\bin\Debug\ImageProcessing.exe.config
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\bin\Debug\ImageProcessing.exe
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\bin\Debug\ImageProcessing.pdb
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.csproj.AssemblyReference.cache
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.csproj.SuggestedBindingRedirects.cache
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.Form1.resources
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.Properties.Resources.resources
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.csproj.GenerateResource.cache
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.exe
+C:\Users\Elaiza Faye\Desktop\Intelligent Systems\ImageProcessing\ImageProcessing\ImageProcessing\obj\Debug\ImageProcessing.pdb
