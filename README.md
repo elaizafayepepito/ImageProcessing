@@ -23,3 +23,19 @@ Histogram
 Sepia  
 
 ![](Output%20Images/5_Sepia.png)  
+  
+  
+# DIP Activity Part 2 Output Images  
+  
+  
+Image with greenscreen  
+
+![](Output%20Images/Part2_greenscreen.jpg)  
+  
+Background Image  
+
+![](Output%20Images/Part2_backgroung.jpg)  
+  
+Subtract Output Image  
+
+![](Output%20Images/Part2_Subtract.png)  
