@@ -84,6 +84,55 @@ namespace ImageProcessing
             pictureBox2.Image = processed;
         }
 
+        private void histogramToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Color sample, gray;
+            Byte graydata;
+            processed = new Bitmap(loaded.Width, loaded.Height);
+
+            //Grayscale Convertion;
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    sample = loaded.GetPixel(x, y);
+                    graydata = (byte)((sample.R + sample.G + sample.B) / 3);
+                    gray = Color.FromArgb(graydata, graydata, graydata);
+                    loaded.SetPixel(x, y, gray);
+                }
+            }
+
+            //histogram 1d data;
+            int[] histdata = new int[256]; // array from 0 to 255
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    sample = loaded.GetPixel(x, y);
+                    histdata[sample.R]++; // can be any color property r,g or b
+                }
+            }
+
+            // Bitmap Graph Generation
+            // Setting empty Bitmap with background color
+            processed = new Bitmap(256, 800);
+            for (int x = 0; x < 256; x++)
+            {
+                for (int y = 0; y < 800; y++)
+                {
+                    processed.SetPixel(x, y, Color.White);
+                }
+            }
+            // plotting points based from histdata
+            for (int x = 0; x < 256; x++)
+            {
+                for (int y = 0; y < Math.Min(histdata[x] / 5, processed.Height - 1); y++)
+                {
+                    processed.SetPixel(x, (processed.Height - 1) - y, Color.Black);
+                }
+            }
+            pictureBox2.Image = processed;
+        }
 
     }
 }
