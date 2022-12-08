@@ -34,7 +34,7 @@ Image with greenscreen
   
 Background Image  
 
-![](Output%20Images/Part2_backgroung.jpg)  
+![](Output%20Images/Part2_background.jpg)  
   
 Subtract Output Image  
 
