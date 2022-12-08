@@ -104,8 +104,9 @@
             // greyscaleToolStripMenuItem
             // 
             this.greyscaleToolStripMenuItem.Name = "greyscaleToolStripMenuItem";
-            this.greyscaleToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.greyscaleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.greyscaleToolStripMenuItem.Text = "Greyscale";
+            this.greyscaleToolStripMenuItem.Click += new System.EventHandler(this.greyscaleToolStripMenuItem_Click);
             // 
             // colorInversionToolStripMenuItem
             // 

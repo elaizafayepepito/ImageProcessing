@@ -53,5 +53,22 @@ namespace ImageProcessing
             }
             pictureBox2.Image = processed;
         }
+
+        private void greyscaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(loaded.Width, loaded.Height);
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    Color pixel = loaded.GetPixel(x, y);
+                    int grey = (pixel.R + pixel.G + pixel.B) / 3;
+                    Color greyscale = Color.FromArgb(grey, grey, grey);
+                    processed.SetPixel(x, y, greyscale);
+                }
+            }
+            pictureBox2.Image = processed;
+        }
+
     }
 }
