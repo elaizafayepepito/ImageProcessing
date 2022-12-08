@@ -40,5 +40,18 @@ namespace ImageProcessing
             processed.Save(saveFileDialog1.FileName);
         }
 
+        private void basicCopyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            processed = new Bitmap(loaded.Width, loaded.Height);
+            for (int x = 0; x < loaded.Width; x++)
+            {
+                for (int y = 0; y < loaded.Height; y++)
+                {
+                    Color data = loaded.GetPixel(x, y);
+                    processed.SetPixel(x, y, data);
+                }
+            }
+            pictureBox2.Image = processed;
+        }
     }
 }

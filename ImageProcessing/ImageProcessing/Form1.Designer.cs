@@ -97,8 +97,9 @@
             // basicCopyToolStripMenuItem
             // 
             this.basicCopyToolStripMenuItem.Name = "basicCopyToolStripMenuItem";
-            this.basicCopyToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.basicCopyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.basicCopyToolStripMenuItem.Text = "Basic Copy";
+            this.basicCopyToolStripMenuItem.Click += new System.EventHandler(this.basicCopyToolStripMenuItem_Click);
             // 
             // greyscaleToolStripMenuItem
             // 
